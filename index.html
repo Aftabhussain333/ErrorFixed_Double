@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rental Service</title>
+<style>
+  body {background-color: #f0e4d7;}
+  header, footer {background-color: #333; color: #fff; padding: 1em;text-align: center;} /* Darker background for better contrast */
+  nav ul {list-style-type: none; padding: 0;}
+  nav ul a {color: #ffcc00; text-decoration: none;} /* Changed link color for better visibility */
+  .product {margin: 20px; float: left; padding: 15px;}
+  .product img {max-width: 100px; max-height: 100px;}
+  .footer {clear: both; margin-top: 20px;}
+  form { margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Car Rentals Inc.</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome to Our Car Rental Service</h2>
+  <p>Find the perfect car for your next adventure.</p>
+</section>
+
+<section id="products" class="product">
+  <h2>Our Apple Products</h2>
+  <img src="apple_product.jpg" alt="Apple Product">
+  <p>Experience innovation with our range of Apple products, designed to keep you connected.</p>
+</section>
+
+<section>
+  <h2>Available Cars for Rent</h2>
+  <div id="cars">
+    <div class="product">
+      <h3>Car Model</h3>
+      <p>Description here. $XX/day.</p>
+      <button onclick="rentCar()">Rent It</button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2023 Car Rentals Inc.</p>
+</footer>
+
+<script>
+function rentCar() {
+  alert("Thank you for renting with us!");
+}
+</script>
+
+</body>
+</html>
